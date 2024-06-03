@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-roboto;
+  }
+}
+
+@layer components {
+  .size-selector input:checked+label {
+    @apply bg-primary text-white;
+  }
+
+  .color-selector input:checked+label {
+    @apply ring-2 ring-primary;
+  }
+
+  .input-box {
+    @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0;
+  }
+
+  .mySwiper .swiper-slide {
+    @apply cursor-pointer border
+  }
+
+  .mySwiper .swiper-slide.swiper-slide-thumb-active {
+    @apply border-primary
+  }
+
+  .react-share__ShareButton {
+    @apply !text-gray-400 !hover:text-gray-500 h-8 w-8 rounded-full !border !border-gray-300 flex items-center justify-center;
+
+  }
+
+
+}
